@@ -29,14 +29,38 @@
       imageContainer.append(image);
       image.show();
       window.print();
-//      window.close();
+      var width = image.width();
+	$('#metadata').css('width', width+'px');;
     }).attr('src', params.image);
+    jQuery.get('/fedora/objects/'+params.pid+'/methods/uofm:mods2htmlSdef/mods2html', function (data) { 
+		$('#metadata').html(data);
+	}); 
+
 });
 </script>
 <style>
   html body, table, tr, td {margin:0;padding:0;text-align:center;font-size:11px;font-family: Verdana,Arial,sans-serif;}
   td.header {font-weight:bold; padding: 6px;}
   img { margin: auto;}
+
+.iiv-text-container {
+  margin: auto;
+  padding: 2px;
+  overflow: auto;
+  text-align: left;
+  width: 600px;
+}
+
+
+.iiv-text-container ul
+{
+    margin: 0; padding:0;
+}
+
+.iiv-text-container ul li
+{
+  list-style: none;
+} 
 </style>
 </head>
   <body>
@@ -47,6 +71,9 @@
       <tr>
         <td class="image"><span class="loading">Loading image...<br><img src="images/loading.gif"></span></td>
       </tr>
+      <tr><td>
+	<div class="iiv-text-container" id="metadata"></div>
+      </td></tr>
     </table>
   </body>
 </html>
