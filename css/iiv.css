@@ -85,8 +85,7 @@ padding-top: 2px;
 }
 
 .iiv-thumbnail-container {
- margin: 6px; 
- height: 468px;
+ height: 480px;
  
 }
 
@@ -204,20 +203,20 @@ padding-top: 2px;
 .iiv-viewer-thumbnail
 {
 	cursor: hand;
-	margin: 0; padding: 5px;
+	margin: 0; padding: 0px;
 	margin-left: 5px;
 	float: left;
 	position: relative;  /* Set the absolute positioning base coordinate */
  	width: 125px;
 	height: 90px;
-	text-align: center;
+	text-align: center; 
 }
 
 
 .iiv-viewer-thumbnail .zoom-icon
 {
 	position:absolute;
-	bottom:23px; 
+	bottom:14px; 
 	right:14px;
 	filter:alpha(opacity=75);
 	-moz-opacity:0.75;
