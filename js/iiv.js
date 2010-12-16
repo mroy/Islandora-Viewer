@@ -16,7 +16,7 @@ iiv.Viewer = new iiv.Class({
   ui: null,
   iivContainer: '.iiv',
   mapContainer: 'iiv-image-panel',
-  islandoraUrl: 'http://localhost',
+  islandoraUrl: 'http://syn.lib.umanitoba.ca',
   fedoraUrl: 'http://' + location.host + '/fedora',
   pids: null,
   pageIndex: 0,
