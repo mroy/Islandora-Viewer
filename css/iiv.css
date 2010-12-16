@@ -31,26 +31,32 @@ a
 .iiv-controlset {
   position:absolute;
   height: 44px; 
-  top: 6px;
+  margin: auto; 
 }
 
 .iiv-toolbar button {
   height: 32px;
   text-decoration: none !important;
   cursor: pointer;
-  padding: 6px; 
   margin: 6px;
+  padding: 0px;
   float:right; 
 }
+
+.iiv-toolbar button.print { width: 102px; } 
+.iiv-toolbar button.download { width: 130px; } 
+.iiv-toolbar button.text { width: 85px; }
 
 .iiv-icon { 
 background-repeat: no-repeat;
 display: block;
 overflow-x: hidden;
 overflow-y: hidden;
+text-align: left;
 text-indent: 20px;
 font-size: 80%;
 padding-top: 2px;
+margin-left: 6px;
 }
 
 .iiv-canvas {
@@ -112,11 +118,13 @@ padding-top: 2px;
 .ui-state-default .iiv-icon.iiv-icon-print {
   background-image: url('../images/print-icon.png');
   background-position: 0px 0px;
+  width:85px;
 }
 
 .ui-state-hover .iiv-icon.iiv-icon-print, .ui-state-active .iiv-icon.iiv-icon-print {
   background-image: url('../images/print-icon.png');
   background-position: 0px -16px;
+  width:85px;
 }
 
 .ui-state-default .iiv-icon.iiv-icon-prevPage {
@@ -143,23 +151,27 @@ padding-top: 2px;
 .ui-state-default .iiv-icon.iiv-icon-download {
   background-image: url('../images/download-icon.png');
   background-position: 0px 0px;
+  width:115px;
 }
 
 .ui-state-hover .iiv-icon.iiv-icon-download, .ui-state-active .iiv-icon.iiv-icon-download {
   background-image: url('../images/download-icon.png');
   background-position: 0px 0px;
+  width:115px;
 }
 
 .ui-state-default .iiv-icon.iiv-icon-text {
   background-image: url('../images/iiv-icons.png');
   background-position: 0px 0px;
   color: #555;
+  width:70px;
 }
 
 .ui-state-hover .iiv-icon.iiv-icon-text, .ui-state-active .iiv-icon.iiv-icon-text {
   background-image: url('../images/iiv-icons.png');
   background-position: 0px -16px;
   color: #000;
+	width:70px;
 }
 
 .iiv-viewer-thumbnail-controls .prev-icon
@@ -376,8 +388,8 @@ button.page-next{
 
 /* other controls */
 .iiv-controlset.other {
-  margin-left: 600px;
-  width: 350px;
+  margin-left: 550px;
+  width: 400px;
 }
 
 

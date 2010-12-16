@@ -470,7 +470,7 @@ iiv.Viewer.UI = new iiv.Class({
     // open popup window
     var popupWidth = Math.max(800, Math.min(624, window.screen.availWidth));
     var popupHeight = Math.max(600, Math.min(824 / 2, window.screen.availHeight));
-    var features = 'width=' + popupWidth + ',height=' + popupHeight + ',toolbar=1';
+    var features = 'width=' + popupWidth + ',height=' + popupHeight + ',toolbar=1,scrollbars=yes';
     window.open(url, '_blank', features);
   },
   
